@@ -12,6 +12,8 @@
 		D4454F9822C038A7002DADBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4454F9622C038A7002DADBE /* Main.storyboard */; };
 		D4454F9A22C038A8002DADBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4454F9922C038A8002DADBE /* Assets.xcassets */; };
 		D4454F9D22C038A8002DADBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4454F9B22C038A8002DADBE /* LaunchScreen.storyboard */; };
+		D4454FA522C03B63002DADBE /* ARSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FA422C03B63002DADBE /* ARSceneViewController.swift */; };
+		D4454FA722C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FA622C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D4454F9922C038A8002DADBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4454F9C22C038A8002DADBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4454F9E22C038A8002DADBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4454FA422C03B63002DADBE /* ARSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSceneViewController.swift; sourceTree = "<group>"; };
+		D4454FA622C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSceneViewController + ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				D4454F9922C038A8002DADBE /* Assets.xcassets */,
 				D4454F9B22C038A8002DADBE /* LaunchScreen.storyboard */,
 				D4454F9E22C038A8002DADBE /* Info.plist */,
+				D4454FA422C03B63002DADBE /* ARSceneViewController.swift */,
+				D4454FA622C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift */,
 			);
 			path = "AR-Build-Your-Game";
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4454FA522C03B63002DADBE /* ARSceneViewController.swift in Sources */,
 				D4454F9522C038A7002DADBE /* ViewController.swift in Sources */,
+				D4454FA722C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift in Sources */,
 				D4454F9322C038A7002DADBE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
