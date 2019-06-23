@@ -12,6 +12,7 @@ import ARKit
 class ARSceneViewController: UIViewController {
     
     var sceneView: ARSCNView!
+    var debugPlanes = [SCNNode]()
     
     override func loadView() {
         super.loadView()
@@ -29,7 +30,7 @@ class ARSceneViewController: UIViewController {
     
     func setupARConfiguration(){
         let configuration = ARWorldTrackingConfiguration()
-        
+        configuration.planeDetection = .horizontal
         sceneView.session.run(configuration)
         sceneView.delegate = self
         

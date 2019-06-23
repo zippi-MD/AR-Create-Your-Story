@@ -12,6 +12,7 @@ func createPlane(center: vector_float3, extent: vector_float3) -> SCNNode {
     let plane = SCNPlane(width: CGFloat(extent.x), height: CGFloat(extent.z))
     let planeMaterial = SCNMaterial()
     planeMaterial.diffuse.contents = UIColor.white.withAlphaComponent(0.3)
+    plane.materials = [planeMaterial]
     
     let planeNode = SCNNode(geometry: plane)
     planeNode.position = SCNVector3Make(center.x, 0, center.z)
