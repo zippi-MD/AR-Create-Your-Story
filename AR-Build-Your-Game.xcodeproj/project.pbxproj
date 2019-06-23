@@ -14,6 +14,7 @@
 		D4454F9D22C038A8002DADBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4454F9B22C038A8002DADBE /* LaunchScreen.storyboard */; };
 		D4454FA522C03B63002DADBE /* ARSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FA422C03B63002DADBE /* ARSceneViewController.swift */; };
 		D4454FA722C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FA622C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift */; };
+		D4454FAA22C04103002DADBE /* Plane Node Helper Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FA922C04103002DADBE /* Plane Node Helper Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D4454F9E22C038A8002DADBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4454FA422C03B63002DADBE /* ARSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSceneViewController.swift; sourceTree = "<group>"; };
 		D4454FA622C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSceneViewController + ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		D4454FA922C04103002DADBE /* Plane Node Helper Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plane Node Helper Functions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		D4454F9122C038A7002DADBE /* AR-Build-Your-Game */ = {
 			isa = PBXGroup;
 			children = (
+				D4454FA822C040EA002DADBE /* Helper Functions */,
 				D4454F9222C038A7002DADBE /* AppDelegate.swift */,
 				D4454F9422C038A7002DADBE /* ViewController.swift */,
 				D4454F9622C038A7002DADBE /* Main.storyboard */,
@@ -68,6 +71,14 @@
 				D4454FA622C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift */,
 			);
 			path = "AR-Build-Your-Game";
+			sourceTree = "<group>";
+		};
+		D4454FA822C040EA002DADBE /* Helper Functions */ = {
+			isa = PBXGroup;
+			children = (
+				D4454FA922C04103002DADBE /* Plane Node Helper Functions.swift */,
+			);
+			path = "Helper Functions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4454FA522C03B63002DADBE /* ARSceneViewController.swift in Sources */,
+				D4454FAA22C04103002DADBE /* Plane Node Helper Functions.swift in Sources */,
 				D4454F9522C038A7002DADBE /* ViewController.swift in Sources */,
 				D4454FA722C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift in Sources */,
 				D4454F9322C038A7002DADBE /* AppDelegate.swift in Sources */,
