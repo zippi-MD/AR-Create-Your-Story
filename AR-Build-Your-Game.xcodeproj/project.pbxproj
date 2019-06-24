@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21075B9022C14FC100E5E701 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21075B8F22C14FC100E5E701 /* Player.swift */; };
+		21075B9022C14FC100E5E701 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21075B8F22C14FC100E5E701 /* Character.swift */; };
+		2131CB7322C1671900A7F777 /* CollitionMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131CB7222C1671900A7F777 /* CollitionMask.swift */; };
 		6910D0AB22C1509E00E544E6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6910D0AA22C1509E00E544E6 /* art.scnassets */; };
 		D4454F9322C038A7002DADBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454F9222C038A7002DADBE /* AppDelegate.swift */; };
 		D4454F9522C038A7002DADBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454F9422C038A7002DADBE /* ViewController.swift */; };
@@ -17,7 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		21075B8F22C14FC100E5E701 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		21075B8F22C14FC100E5E701 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		2131CB7222C1671900A7F777 /* CollitionMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollitionMask.swift; sourceTree = "<group>"; };
 		6910D0AA22C1509E00E544E6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		D4454F8F22C038A7002DADBE /* AR-Build-Your-Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Build-Your-Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4454F9222C038A7002DADBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +67,8 @@
 				6910D0AA22C1509E00E544E6 /* art.scnassets */,
 				D4454F9B22C038A8002DADBE /* LaunchScreen.storyboard */,
 				D4454F9E22C038A8002DADBE /* Info.plist */,
-				21075B8F22C14FC100E5E701 /* Player.swift */,
+				21075B8F22C14FC100E5E701 /* Character.swift */,
+				2131CB7222C1671900A7F777 /* CollitionMask.swift */,
 			);
 			path = "AR-Build-Your-Game";
 			sourceTree = "<group>";
@@ -143,8 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4454F9522C038A7002DADBE /* ViewController.swift in Sources */,
-				21075B9022C14FC100E5E701 /* Player.swift in Sources */,
+				21075B9022C14FC100E5E701 /* Character.swift in Sources */,
 				D4454F9322C038A7002DADBE /* AppDelegate.swift in Sources */,
+				2131CB7322C1671900A7F777 /* CollitionMask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
