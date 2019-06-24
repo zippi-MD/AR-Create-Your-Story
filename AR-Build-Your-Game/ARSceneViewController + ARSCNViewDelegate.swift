@@ -28,4 +28,26 @@ extension ARSceneViewController: ARSCNViewDelegate {
             updatePlane(node.childNodes[0], center: planeAnchor.center, extent: planeAnchor.extent)
         }
     }
+    
+    func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+        guard let state = actualState else { return }
+        switch state {
+        case .selectingPlane:
+            DispatchQueue.main.async {
+                
+                let crosshairColor: UIColor
+                
+                if let _ = self.sceneView.hitTest(self.viewCenter, types: [.existingPlaneUsingExtent]).first {
+                    crosshairColor = .green
+                }
+                else {
+                    crosshairColor = .gray
+                }
+                
+                self.crosshair.backgroundColor = crosshairColor
+                
+            }
+            
+        }
+    }
 }
