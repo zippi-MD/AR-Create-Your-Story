@@ -29,12 +29,37 @@ class ARSceneViewController: UIViewController {
         return view
     }()
     
+    var worldTransform: simd_float4x4? = nil {
+        willSet {
+            if let _ = newValue {
+                actionButton.view.isHidden = false
+            }
+            else {
+                actionButton.view.isHidden = true
+            }
+        }
+    }
+    
+    var planeExtent: simd_float3?
+    var planeCenter: simd_float3?
+    
+    
+    var selectedPlane: SCNNode?
+    
+    //MARK: Action Buttons
+    let actionButton: ActionButtonViewController = {
+        let button = ActionButtonViewController(text: "Seleccionar Plano")
+        return button
+    }()
+    
     //MARK: Game State
     var actualState: GameState! {
         willSet {
             switch newValue! {
             case .selectingPlane:
                 setupSelectingPlaneUI()
+            case .placingGamePlane:
+                setupPlacingGamePlaneUI()
             }
         }
     }
@@ -68,6 +93,45 @@ class ARSceneViewController: UIViewController {
     func setupSelectingPlaneUI(){
         crosshair.center = viewCenter
         view.addSubview(crosshair)
+        
+        view.addSubview(actionButton.view)
+        actionButton.didMove(toParent: self)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(actionButtonWasSelected))
+        actionButton.view.addGestureRecognizer(tap)
+        
+        actionButton.view.isHidden = true
+        
+    }
+    
+    func setupPlacingGamePlaneUI(){
+        actionButton.view.isHidden = true
+        crosshair.isHidden = true
+        
+    }
+    
+    
+    @objc func actionButtonWasSelected(){
+        guard let state = actualState else {return}
+        switch state {
+        case .selectingPlane:
+            if let worldTransform = worldTransform {
+                
+                let configuration = ARWorldTrackingConfiguration()
+                configuration.planeDetection = []
+                sceneView.debugOptions = []
+                sceneView.session.run(configuration)
+                
+                for plane in debugPlanes{
+                    plane.removeFromParentNode()
+                }
+                debugPlanes = []
+                actualState = .placingGamePlane
+                sceneView.session.add(anchor: ARAnchor.init(transform: worldTransform))
+            }
+        case .placingGamePlane:
+            return
+        }
     }
 
 }

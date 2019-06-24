@@ -10,4 +10,5 @@ import Foundation
 
 enum GameState {
     case selectingPlane
+    case placingGamePlane
 }
