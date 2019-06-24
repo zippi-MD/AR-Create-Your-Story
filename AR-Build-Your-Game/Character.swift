@@ -18,6 +18,7 @@ class Character: SCNNode {
     override init() {
         super.init()
         loadModel()
+        loadParticles()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,6 +41,13 @@ class Character: SCNNode {
         
         let collitionGeometry = SCNCapsule(capRadius: collitionCapsuleRadius, height: collitionCapsuleHeight)
         let physicsShape = SCNPhysicsShape(geometry: collitionGeometry, options: [.collisionMargin: CGFloat(0.04)])
+        
+        let physicsBody = SCNPhysicsBody(type: .kinematic, shape: physicsShape)
+        
+        collitionNode.physicsBody = physicsBody
+    }
+    
+    private func loadParticles() {
         
     }
 }
