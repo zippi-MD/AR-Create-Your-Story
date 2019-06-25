@@ -10,7 +10,6 @@ import UIKit
 import ARKit
 
 class ARSceneViewController: UIViewController {
-    
     var sceneView: ARSCNView!
     var debugPlanes = [SCNNode]()
     

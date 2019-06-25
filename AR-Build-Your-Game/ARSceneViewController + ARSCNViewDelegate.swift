@@ -27,6 +27,7 @@ extension ARSceneViewController: ARSCNViewDelegate {
             DispatchQueue.main.async {
                 self.selectedPlane = plane
                 node.addChildNode(plane)
+                self.sceneView.scene = self.addSceneMap(positionNode: self.selectedPlane!)
             }
         }
 
