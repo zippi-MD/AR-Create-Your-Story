@@ -18,9 +18,6 @@
 		D4454FAA22C04103002DADBE /* Plane Node Helper Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FA922C04103002DADBE /* Plane Node Helper Functions.swift */; };
 		D4454FAD22C13FD4002DADBE /* Enumerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FAC22C13FD4002DADBE /* Enumerators.swift */; };
 		D4454FB022C14A63002DADBE /* ActionButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FAF22C14A63002DADBE /* ActionButtonViewController.swift */; };
-		D4454FB322C162BB002DADBE /* MaterialPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FB222C162BB002DADBE /* MaterialPickerViewController.swift */; };
-		D4454FB522C1641D002DADBE /* MaterialPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FB422C1641D002DADBE /* MaterialPickerDelegate.swift */; };
-		D4454FB722C165C9002DADBE /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FB622C165C9002DADBE /* Material.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +34,6 @@
 		D4454FA922C04103002DADBE /* Plane Node Helper Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plane Node Helper Functions.swift"; sourceTree = "<group>"; };
 		D4454FAC22C13FD4002DADBE /* Enumerators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerators.swift; sourceTree = "<group>"; };
 		D4454FAF22C14A63002DADBE /* ActionButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButtonViewController.swift; sourceTree = "<group>"; };
-		D4454FB222C162BB002DADBE /* MaterialPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialPickerViewController.swift; sourceTree = "<group>"; };
-		D4454FB422C1641D002DADBE /* MaterialPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialPickerDelegate.swift; sourceTree = "<group>"; };
-		D4454FB622C165C9002DADBE /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +66,6 @@
 		D4454F9122C038A7002DADBE /* AR-Build-Your-Game */ = {
 			isa = PBXGroup;
 			children = (
-				D4454FB122C162A1002DADBE /* Material Picker */,
 				D4454FAE22C14A4F002DADBE /* Action Button */,
 				D4454FAB22C13FC6002DADBE /* Utils */,
 				D4454FA822C040EA002DADBE /* Helper Functions */,
@@ -101,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				D4454FAC22C13FD4002DADBE /* Enumerators.swift */,
-				D4454FB622C165C9002DADBE /* Material.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -112,15 +104,6 @@
 				D4454FAF22C14A63002DADBE /* ActionButtonViewController.swift */,
 			);
 			path = "Action Button";
-			sourceTree = "<group>";
-		};
-		D4454FB122C162A1002DADBE /* Material Picker */ = {
-			isa = PBXGroup;
-			children = (
-				D4454FB222C162BB002DADBE /* MaterialPickerViewController.swift */,
-				D4454FB422C1641D002DADBE /* MaterialPickerDelegate.swift */,
-			);
-			path = "Material Picker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,14 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4454FB722C165C9002DADBE /* Material.swift in Sources */,
 				D4454FA522C03B63002DADBE /* ARSceneViewController.swift in Sources */,
 				D4454FB022C14A63002DADBE /* ActionButtonViewController.swift in Sources */,
 				D4454FAA22C04103002DADBE /* Plane Node Helper Functions.swift in Sources */,
 				D4454F9522C038A7002DADBE /* ViewController.swift in Sources */,
-				D4454FB522C1641D002DADBE /* MaterialPickerDelegate.swift in Sources */,
 				D4454FA722C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift in Sources */,
-				D4454FB322C162BB002DADBE /* MaterialPickerViewController.swift in Sources */,
 				D4454F9322C038A7002DADBE /* AppDelegate.swift in Sources */,
 				D4454FAD22C13FD4002DADBE /* Enumerators.swift in Sources */,
 			);
