@@ -10,7 +10,6 @@ import UIKit
 import ARKit
 
 class ARSceneViewController: UIViewController {
-    
     var sceneView: ARSCNView!
     var debugPlanes = [SCNNode]()
     
@@ -60,6 +59,8 @@ class ARSceneViewController: UIViewController {
                 setupSelectingPlaneUI()
             case .placingGamePlane:
                 setupPlacingGamePlaneUI()
+            case .buildingMap:
+                setupBuildingMapUI()
             }
         }
     }
@@ -104,6 +105,10 @@ class ARSceneViewController: UIViewController {
         
     }
     
+    func setupBuildingMapUI(){
+        
+    }
+    
     func setupPlacingGamePlaneUI(){
         actionButton.view.isHidden = true
         crosshair.isHidden = true
@@ -130,6 +135,8 @@ class ARSceneViewController: UIViewController {
                 sceneView.session.add(anchor: ARAnchor.init(transform: worldTransform))
             }
         case .placingGamePlane:
+            return
+        case .buildingMap:
             return
         }
     }

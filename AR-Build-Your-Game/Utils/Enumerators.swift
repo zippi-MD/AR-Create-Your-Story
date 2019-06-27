@@ -11,4 +11,14 @@ import Foundation
 enum GameState {
     case selectingPlane
     case placingGamePlane
+    case buildingMap
+}
+
+enum FloorType: String, CaseIterable{
+    case grass = "grass"
+    case water = "water"
+    case fire  = "fire"
+    case enemy = "enemy"
+    case ice   = "ice"
+    
 }

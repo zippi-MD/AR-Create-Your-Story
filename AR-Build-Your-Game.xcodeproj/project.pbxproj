@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6910D0AB22C1509E00E544E6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6910D0AA22C1509E00E544E6 /* art.scnassets */; };
+		691246E022C2913F0048BFD7 /* ARSceneViewController+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691246DF22C2913F0048BFD7 /* ARSceneViewController+Scene.swift */; };
+		691246E222C2A8120048BFD7 /* BoundingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691246E122C2A8120048BFD7 /* BoundingFunction.swift */; };
 		D4454F9322C038A7002DADBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454F9222C038A7002DADBE /* AppDelegate.swift */; };
 		D4454F9522C038A7002DADBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454F9422C038A7002DADBE /* ViewController.swift */; };
 		D4454F9822C038A7002DADBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4454F9622C038A7002DADBE /* Main.storyboard */; };
@@ -21,10 +23,13 @@
 		D4454FB322C162BB002DADBE /* MaterialPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FB222C162BB002DADBE /* MaterialPickerViewController.swift */; };
 		D4454FB522C1641D002DADBE /* MaterialPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FB422C1641D002DADBE /* MaterialPickerDelegate.swift */; };
 		D4454FB722C165C9002DADBE /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FB622C165C9002DADBE /* Material.swift */; };
+		D465A17922C52B5C007E1935 /* ARSceneViewController+Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = D465A17822C52B5C007E1935 /* ARSceneViewController+Touches.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6910D0AA22C1509E00E544E6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		691246DF22C2913F0048BFD7 /* ARSceneViewController+Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSceneViewController+Scene.swift"; sourceTree = "<group>"; };
+		691246E122C2A8120048BFD7 /* BoundingFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingFunction.swift; sourceTree = "<group>"; };
 		D4454F8F22C038A7002DADBE /* AR-Build-Your-Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Build-Your-Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4454F9222C038A7002DADBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4454F9422C038A7002DADBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		D4454FB222C162BB002DADBE /* MaterialPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialPickerViewController.swift; sourceTree = "<group>"; };
 		D4454FB422C1641D002DADBE /* MaterialPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialPickerDelegate.swift; sourceTree = "<group>"; };
 		D4454FB622C165C9002DADBE /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		D465A17822C52B5C007E1935 /* ARSceneViewController+Touches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSceneViewController+Touches.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,8 @@
 				D4454F9E22C038A8002DADBE /* Info.plist */,
 				D4454FA422C03B63002DADBE /* ARSceneViewController.swift */,
 				D4454FA622C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift */,
+				691246DF22C2913F0048BFD7 /* ARSceneViewController+Scene.swift */,
+				D465A17822C52B5C007E1935 /* ARSceneViewController+Touches.swift */,
 			);
 			path = "AR-Build-Your-Game";
 			sourceTree = "<group>";
@@ -102,6 +110,7 @@
 			children = (
 				D4454FAC22C13FD4002DADBE /* Enumerators.swift */,
 				D4454FB622C165C9002DADBE /* Material.swift */,
+				691246E122C2A8120048BFD7 /* BoundingFunction.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -195,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D465A17922C52B5C007E1935 /* ARSceneViewController+Touches.swift in Sources */,
 				D4454FB722C165C9002DADBE /* Material.swift in Sources */,
 				D4454FA522C03B63002DADBE /* ARSceneViewController.swift in Sources */,
 				D4454FB022C14A63002DADBE /* ActionButtonViewController.swift in Sources */,
@@ -202,7 +212,9 @@
 				D4454F9522C038A7002DADBE /* ViewController.swift in Sources */,
 				D4454FB522C1641D002DADBE /* MaterialPickerDelegate.swift in Sources */,
 				D4454FA722C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift in Sources */,
+				691246E022C2913F0048BFD7 /* ARSceneViewController+Scene.swift in Sources */,
 				D4454FB322C162BB002DADBE /* MaterialPickerViewController.swift in Sources */,
+				691246E222C2A8120048BFD7 /* BoundingFunction.swift in Sources */,
 				D4454F9322C038A7002DADBE /* AppDelegate.swift in Sources */,
 				D4454FAD22C13FD4002DADBE /* Enumerators.swift in Sources */,
 			);
