@@ -29,6 +29,13 @@ extension ARSceneViewController {
             let selectedNode = hit.node
             if let name = selectedNode.name, name != "plane"{
 //                To do  - handle selected node
+                
+                let newBlock = addBlock(scene: sceneView.scene, node: selectedNode, type: .ice)
+                
+                sceneView.scene.rootNode.addChildNode(newBlock)
+                
+                
+                
             }
             
         }
