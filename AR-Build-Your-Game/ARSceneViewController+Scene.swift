@@ -19,8 +19,9 @@ extension ARSceneViewController {
         let sceneMap = boundingBox.x < boundingBox.y ? SCNScene(named: "art.scnassets/Demo.scn")! : SCNScene(named: "art.scnassets/MapGrid.scn")!
         
         let plane = sceneMap.rootNode.childNode(withName: "plane", recursively: true)
+        let largeSize = higherBounding(boundingBox)
         
-        plane?.scale = SCNVector3(x: 0.1, y: 0.1, z: 0.1 ) //(largeSize  )
+        plane?.scale = SCNVector3(x: largeSize, y: largeSize, z: largeSize )
             
         plane?.orientation = positionNode.worldOrientation
             
@@ -31,14 +32,5 @@ extension ARSceneViewController {
         
   
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 }
