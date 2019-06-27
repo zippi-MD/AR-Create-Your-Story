@@ -8,35 +8,6 @@
 
 import SceneKit
 
-enum CharacterSounds {
-    case ahhSound
-    case catchFireSound
-    case ouchSound
-    case hitSound
-    case hitEnemySound
-    case explodeEnemySound
-    case jumpSound
-    case attackSound
-    case stepSound
-}
-
-enum CharacterParticles {
-    case jumpDust
-    case fireEmitter
-    case smokeEmitter
-    case whiteSmokeEmitter
-    case spinParticle
-    case spinCircleParticle
-    case attachParticleAttach
-}
-
-enum CharacterAnimations: String {
-    case idle = "idle"
-    case walk = "walk"
-    case jump = "jump"
-    case spin = "spin"
-}
-
 class Character: SCNNode {
     //Mark variables
     private var sounds = [CharacterSounds: SCNAudioSource]()
