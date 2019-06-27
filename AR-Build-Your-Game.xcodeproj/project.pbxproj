@@ -11,11 +11,22 @@
 		2131CB7322C1671900A7F777 /* CollitionMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131CB7222C1671900A7F777 /* CollitionMask.swift */; };
 		2180DCFF22C17C8400F9FA07 /* audio in Resources */ = {isa = PBXBuildFile; fileRef = 2180DCFE22C17C8400F9FA07 /* audio */; };
 		6910D0AB22C1509E00E544E6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6910D0AA22C1509E00E544E6 /* art.scnassets */; };
+		691246E022C2913F0048BFD7 /* ARSceneViewController+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691246DF22C2913F0048BFD7 /* ARSceneViewController+Scene.swift */; };
+		691246E222C2A8120048BFD7 /* BoundingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691246E122C2A8120048BFD7 /* BoundingFunction.swift */; };
 		D4454F9322C038A7002DADBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454F9222C038A7002DADBE /* AppDelegate.swift */; };
 		D4454F9522C038A7002DADBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454F9422C038A7002DADBE /* ViewController.swift */; };
 		D4454F9822C038A7002DADBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4454F9622C038A7002DADBE /* Main.storyboard */; };
 		D4454F9A22C038A8002DADBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4454F9922C038A8002DADBE /* Assets.xcassets */; };
 		D4454F9D22C038A8002DADBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4454F9B22C038A8002DADBE /* LaunchScreen.storyboard */; };
+		D4454FA522C03B63002DADBE /* ARSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FA422C03B63002DADBE /* ARSceneViewController.swift */; };
+		D4454FA722C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FA622C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift */; };
+		D4454FAA22C04103002DADBE /* Plane Node Helper Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FA922C04103002DADBE /* Plane Node Helper Functions.swift */; };
+		D4454FAD22C13FD4002DADBE /* Enumerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FAC22C13FD4002DADBE /* Enumerators.swift */; };
+		D4454FB022C14A63002DADBE /* ActionButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FAF22C14A63002DADBE /* ActionButtonViewController.swift */; };
+		D4454FB322C162BB002DADBE /* MaterialPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FB222C162BB002DADBE /* MaterialPickerViewController.swift */; };
+		D4454FB522C1641D002DADBE /* MaterialPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FB422C1641D002DADBE /* MaterialPickerDelegate.swift */; };
+		D4454FB722C165C9002DADBE /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FB622C165C9002DADBE /* Material.swift */; };
+		D465A17922C52B5C007E1935 /* ARSceneViewController+Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = D465A17822C52B5C007E1935 /* ARSceneViewController+Touches.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +34,8 @@
 		2131CB7222C1671900A7F777 /* CollitionMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollitionMask.swift; sourceTree = "<group>"; };
 		2180DCFE22C17C8400F9FA07 /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = audio; sourceTree = "<group>"; };
 		6910D0AA22C1509E00E544E6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		691246DF22C2913F0048BFD7 /* ARSceneViewController+Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSceneViewController+Scene.swift"; sourceTree = "<group>"; };
+		691246E122C2A8120048BFD7 /* BoundingFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingFunction.swift; sourceTree = "<group>"; };
 		D4454F8F22C038A7002DADBE /* AR-Build-Your-Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Build-Your-Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4454F9222C038A7002DADBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4454F9422C038A7002DADBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +43,15 @@
 		D4454F9922C038A8002DADBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4454F9C22C038A8002DADBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4454F9E22C038A8002DADBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4454FA422C03B63002DADBE /* ARSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSceneViewController.swift; sourceTree = "<group>"; };
+		D4454FA622C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSceneViewController + ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		D4454FA922C04103002DADBE /* Plane Node Helper Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plane Node Helper Functions.swift"; sourceTree = "<group>"; };
+		D4454FAC22C13FD4002DADBE /* Enumerators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerators.swift; sourceTree = "<group>"; };
+		D4454FAF22C14A63002DADBE /* ActionButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButtonViewController.swift; sourceTree = "<group>"; };
+		D4454FB222C162BB002DADBE /* MaterialPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialPickerViewController.swift; sourceTree = "<group>"; };
+		D4454FB422C1641D002DADBE /* MaterialPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialPickerDelegate.swift; sourceTree = "<group>"; };
+		D4454FB622C165C9002DADBE /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		D465A17822C52B5C007E1935 /* ARSceneViewController+Touches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSceneViewController+Touches.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +84,10 @@
 		D4454F9122C038A7002DADBE /* AR-Build-Your-Game */ = {
 			isa = PBXGroup;
 			children = (
+				D4454FB122C162A1002DADBE /* Material Picker */,
+				D4454FAE22C14A4F002DADBE /* Action Button */,
+				D4454FAB22C13FC6002DADBE /* Utils */,
+				D4454FA822C040EA002DADBE /* Helper Functions */,
 				2180DCFE22C17C8400F9FA07 /* audio */,
 				D4454F9222C038A7002DADBE /* AppDelegate.swift */,
 				D4454F9422C038A7002DADBE /* ViewController.swift */,
@@ -70,10 +96,49 @@
 				6910D0AA22C1509E00E544E6 /* art.scnassets */,
 				D4454F9B22C038A8002DADBE /* LaunchScreen.storyboard */,
 				D4454F9E22C038A8002DADBE /* Info.plist */,
+				D4454FA422C03B63002DADBE /* ARSceneViewController.swift */,
+				D4454FA622C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift */,
+				691246DF22C2913F0048BFD7 /* ARSceneViewController+Scene.swift */,
+				D465A17822C52B5C007E1935 /* ARSceneViewController+Touches.swift */,
 				21075B8F22C14FC100E5E701 /* Character.swift */,
 				2131CB7222C1671900A7F777 /* CollitionMask.swift */,
 			);
 			path = "AR-Build-Your-Game";
+			sourceTree = "<group>";
+		};
+		D4454FA822C040EA002DADBE /* Helper Functions */ = {
+			isa = PBXGroup;
+			children = (
+				D4454FA922C04103002DADBE /* Plane Node Helper Functions.swift */,
+			);
+			path = "Helper Functions";
+			sourceTree = "<group>";
+		};
+		D4454FAB22C13FC6002DADBE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D4454FAC22C13FD4002DADBE /* Enumerators.swift */,
+				D4454FB622C165C9002DADBE /* Material.swift */,
+				691246E122C2A8120048BFD7 /* BoundingFunction.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D4454FAE22C14A4F002DADBE /* Action Button */ = {
+			isa = PBXGroup;
+			children = (
+				D4454FAF22C14A63002DADBE /* ActionButtonViewController.swift */,
+			);
+			path = "Action Button";
+			sourceTree = "<group>";
+		};
+		D4454FB122C162A1002DADBE /* Material Picker */ = {
+			isa = PBXGroup;
+			children = (
+				D4454FB222C162BB002DADBE /* MaterialPickerViewController.swift */,
+				D4454FB422C1641D002DADBE /* MaterialPickerDelegate.swift */,
+			);
+			path = "Material Picker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +214,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D465A17922C52B5C007E1935 /* ARSceneViewController+Touches.swift in Sources */,
+				D4454FB722C165C9002DADBE /* Material.swift in Sources */,
+				D4454FA522C03B63002DADBE /* ARSceneViewController.swift in Sources */,
+				D4454FB022C14A63002DADBE /* ActionButtonViewController.swift in Sources */,
+				D4454FAA22C04103002DADBE /* Plane Node Helper Functions.swift in Sources */,
 				D4454F9522C038A7002DADBE /* ViewController.swift in Sources */,
+				D4454FB522C1641D002DADBE /* MaterialPickerDelegate.swift in Sources */,
+				D4454FA722C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift in Sources */,
+				691246E022C2913F0048BFD7 /* ARSceneViewController+Scene.swift in Sources */,
+				D4454FB322C162BB002DADBE /* MaterialPickerViewController.swift in Sources */,
+				691246E222C2A8120048BFD7 /* BoundingFunction.swift in Sources */,
 				21075B9022C14FC100E5E701 /* Character.swift in Sources */,
 				D4454F9322C038A7002DADBE /* AppDelegate.swift in Sources */,
+				D4454FAD22C13FD4002DADBE /* Enumerators.swift in Sources */,
 				2131CB7322C1671900A7F777 /* CollitionMask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
