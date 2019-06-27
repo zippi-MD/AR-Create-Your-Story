@@ -13,54 +13,23 @@ import SceneKit
 extension ARSceneViewController {
     
     func addSceneMap(positionNode: SCNNode ) -> SCNScene {
+        
+        let boundingBox = positionNode.boundingBox.max
          
+        let sceneMap = boundingBox.x < boundingBox.y ? SCNScene(named: "art.scnassets/Demo.scn")! : SCNScene(named: "art.scnassets/MapGrid.scn")!
         
+        let plane = sceneMap.rootNode.childNode(withName: "plane", recursively: true)
         
-        var largeSize = higherBounding(positionNode.boundingBox.max)
-
-       
-        
-        //plane?.rotation = positionNode.rotation
-        
-        if (positionNode.boundingBox.max.x < positionNode.boundingBox.max.y){
-            var sceneMap = SCNScene(named: "art.scnassets/Demo.scn")
+        plane?.scale = SCNVector3(x: 0.1, y: 0.1, z: 0.1 ) //(largeSize  )
             
-            var plane = sceneMap?.rootNode.childNode(withName: "plane", recursively: true)
-            plane?.scale = SCNVector3(x: 0.1, y: 0.1, z: 0.1 ) //(largeSize  )
-            
-            plane?.orientation = positionNode.worldOrientation
+        plane?.orientation = positionNode.worldOrientation
             
             
-            plane?.position = positionNode.worldPosition
+        plane?.position = positionNode.worldPosition
             
-            return sceneMap!
-            
+        return sceneMap
         
-        
-        }else{
-            
-            var sceneMap = SCNScene(named: "art.scnassets/MapGrid.scn")
-            
-            var plane = sceneMap?.rootNode.childNode(withName: "plane", recursively: true)
-            plane?.scale = SCNVector3(x: 0.1, y: 0.1, z: 0.1 ) //(largeSize  )
-            
-            plane?.orientation = positionNode.worldOrientation
-            
-            
-            plane?.position = positionNode.worldPosition
-            
-             return sceneMap!
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+  
     }
     
     
