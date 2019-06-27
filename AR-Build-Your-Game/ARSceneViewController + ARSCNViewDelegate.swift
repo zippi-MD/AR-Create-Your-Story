@@ -28,7 +28,34 @@ extension ARSceneViewController: ARSCNViewDelegate {
                 self.selectedPlane = plane
                 node.addChildNode(plane)
                 self.sceneView.scene = self.addSceneMap(positionNode: self.selectedPlane!)
+                
+                for node in self.sceneView.scene.rootNode.childNodes {
+                    guard let nodeName = node.name else {continue}
+                    if nodeName == "plane"{
+                        let nodesNumber: [String: Int] = ["A": 1, "B": 3, "C":5, "D": 7, "E": 9, "F": 11, "G": 13, "H": 15, "I": 17, "J": 19, "K": 21, "L": 23, "M": 25]
+                        for letterNode in node.childNodes {
+                            guard let startingNumber = nodesNumber[letterNode.name!] else {continue}
+                            var x = startingNumber
+                            var y = 1
+                            
+                            for square in letterNode.childNodes{
+                                square.name = "\(x),\(y)"
+                                y += 1
+                                if y == 11 {
+                                    x += 1
+                                    y = 1
+                                }
+                            }
+                            
+                        }
+                        
+                    }
+                }
+                
+                self.actualState = .buildingMap
             }
+        case .buildingMap:
+            return
         }
 
     }
@@ -67,6 +94,8 @@ extension ARSceneViewController: ARSCNViewDelegate {
             }
             
         case .placingGamePlane:
+            return
+        case .buildingMap:
             return
             
         }
