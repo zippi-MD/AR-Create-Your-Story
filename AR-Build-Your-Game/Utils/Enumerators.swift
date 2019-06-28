@@ -21,5 +21,6 @@ enum FloorType: String, CaseIterable{
     case enemy = "enemy"
     case ice   = "ice"
     case none = "none"
+    case player = "panda"
     
 }

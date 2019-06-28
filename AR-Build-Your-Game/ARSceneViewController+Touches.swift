@@ -36,13 +36,26 @@ extension ARSceneViewController {
                     if floor == .none {
                         placedNode.0.removeFromParentNode()
                         blocksOnScene.removeValue(forKey: name)
+                        
+                        if placedNode.1 == .player {
+                            playerLocation = nil
+                        }
+                        
                     }
                     
                     if placedNode.1 == floor {
                         return
                     }
+                    else if floor == .player {
+                        return
+                    }
                     else {
                         placedNode.0.removeFromParentNode()
+                        
+                        if placedNode.1 == .player {
+                            playerLocation = nil
+                        }
+                        
                     }
                 }
                 
@@ -50,11 +63,20 @@ extension ARSceneViewController {
                     return
                 }
                 
+                if let _ = playerLocation, floor == .player {
+                    return
+                }
+                
+                
+                
                 let newBlock = addBlock(scene: sceneView.scene, node: selectedNode, type: floor)
                 newBlock.childNodes[0].name = name
                 sceneView.scene.rootNode.addChildNode(newBlock)
                 blocksOnScene[name] = (newBlock,floor)
                 
+                if floor == .player {
+                    playerLocation = (name, newBlock)
+                }
                 
                 
                 

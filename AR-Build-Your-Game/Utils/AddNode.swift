@@ -17,7 +17,7 @@ func addBlock(scene: SCNScene, node: SCNNode, type : FloorType  ) -> SCNNode{
     let tempBlock = block.clone()
     
     let material = SCNMaterial()
-    material.diffuse.contents = UIImage.init(named: "\(type)-1")
+    material.diffuse.contents = UIImage.init(named: "\(type.rawValue)-1")
     
    
     tempBlock.position = node.worldPosition
