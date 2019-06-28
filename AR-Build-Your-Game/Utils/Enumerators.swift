@@ -20,5 +20,6 @@ enum FloorType: String, CaseIterable{
     case fire  = "fire"
     case enemy = "enemy"
     case ice   = "ice"
+    case none = "none"
     
 }

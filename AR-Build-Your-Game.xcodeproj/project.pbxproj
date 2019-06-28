@@ -25,6 +25,7 @@
 		D4454FB522C1641D002DADBE /* MaterialPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FB422C1641D002DADBE /* MaterialPickerDelegate.swift */; };
 		D4454FB722C165C9002DADBE /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4454FB622C165C9002DADBE /* Material.swift */; };
 		D465A17922C52B5C007E1935 /* ARSceneViewController+Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = D465A17822C52B5C007E1935 /* ARSceneViewController+Touches.swift */; };
+		D465A17B22C56FDC007E1935 /* ARSceneViewController+MaterialPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D465A17A22C56FDC007E1935 /* ARSceneViewController+MaterialPickerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		D4454FB422C1641D002DADBE /* MaterialPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialPickerDelegate.swift; sourceTree = "<group>"; };
 		D4454FB622C165C9002DADBE /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		D465A17822C52B5C007E1935 /* ARSceneViewController+Touches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSceneViewController+Touches.swift"; sourceTree = "<group>"; };
+		D465A17A22C56FDC007E1935 /* ARSceneViewController+MaterialPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSceneViewController+MaterialPickerDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				D4454FA622C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift */,
 				691246DF22C2913F0048BFD7 /* ARSceneViewController+Scene.swift */,
 				D465A17822C52B5C007E1935 /* ARSceneViewController+Touches.swift */,
+				D465A17A22C56FDC007E1935 /* ARSceneViewController+MaterialPickerDelegate.swift */,
 			);
 			path = "AR-Build-Your-Game";
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				D4454FB722C165C9002DADBE /* Material.swift in Sources */,
 				D4454FA522C03B63002DADBE /* ARSceneViewController.swift in Sources */,
 				D4454FB022C14A63002DADBE /* ActionButtonViewController.swift in Sources */,
+				D465A17B22C56FDC007E1935 /* ARSceneViewController+MaterialPickerDelegate.swift in Sources */,
 				D4454FAA22C04103002DADBE /* Plane Node Helper Functions.swift in Sources */,
 				D4454F9522C038A7002DADBE /* ViewController.swift in Sources */,
 				D4454FB522C1641D002DADBE /* MaterialPickerDelegate.swift in Sources */,
@@ -367,7 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LG4XTB94FF;
+				DEVELOPMENT_TEAM = 27MUBRMHKJ;
 				INFOPLIST_FILE = "AR-Build-Your-Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,7 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LG4XTB94FF;
+				DEVELOPMENT_TEAM = 27MUBRMHKJ;
 				INFOPLIST_FILE = "AR-Build-Your-Game/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
