@@ -51,7 +51,7 @@ extension ARSceneViewController {
                 }
                 
                 let newBlock = addBlock(scene: sceneView.scene, node: selectedNode, type: floor)
-                newBlock.name = name
+                newBlock.childNodes[0].name = name
                 sceneView.scene.rootNode.addChildNode(newBlock)
                 blocksOnScene[name] = (newBlock,floor)
                 
