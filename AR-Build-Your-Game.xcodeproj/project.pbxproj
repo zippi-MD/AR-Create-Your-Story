@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21075B9022C14FC100E5E701 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21075B8F22C14FC100E5E701 /* Character.swift */; };
+		2131CB7322C1671900A7F777 /* CollitionMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131CB7222C1671900A7F777 /* CollitionMask.swift */; };
+		2180DCFF22C17C8400F9FA07 /* audio in Resources */ = {isa = PBXBuildFile; fileRef = 2180DCFE22C17C8400F9FA07 /* audio */; };
 		6910D0AB22C1509E00E544E6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6910D0AA22C1509E00E544E6 /* art.scnassets */; };
 		691246E022C2913F0048BFD7 /* ARSceneViewController+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691246DF22C2913F0048BFD7 /* ARSceneViewController+Scene.swift */; };
 		691246E222C2A8120048BFD7 /* BoundingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691246E122C2A8120048BFD7 /* BoundingFunction.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21075B8F22C14FC100E5E701 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		2131CB7222C1671900A7F777 /* CollitionMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollitionMask.swift; sourceTree = "<group>"; };
+		2180DCFE22C17C8400F9FA07 /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = audio; sourceTree = "<group>"; };
 		6910D0AA22C1509E00E544E6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		691246DF22C2913F0048BFD7 /* ARSceneViewController+Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARSceneViewController+Scene.swift"; sourceTree = "<group>"; };
 		691246E122C2A8120048BFD7 /* BoundingFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingFunction.swift; sourceTree = "<group>"; };
@@ -82,6 +88,7 @@
 				D4454FAE22C14A4F002DADBE /* Action Button */,
 				D4454FAB22C13FC6002DADBE /* Utils */,
 				D4454FA822C040EA002DADBE /* Helper Functions */,
+				2180DCFE22C17C8400F9FA07 /* audio */,
 				D4454F9222C038A7002DADBE /* AppDelegate.swift */,
 				D4454F9422C038A7002DADBE /* ViewController.swift */,
 				D4454F9622C038A7002DADBE /* Main.storyboard */,
@@ -93,6 +100,8 @@
 				D4454FA622C03D34002DADBE /* ARSceneViewController + ARSCNViewDelegate.swift */,
 				691246DF22C2913F0048BFD7 /* ARSceneViewController+Scene.swift */,
 				D465A17822C52B5C007E1935 /* ARSceneViewController+Touches.swift */,
+				21075B8F22C14FC100E5E701 /* Character.swift */,
+				2131CB7222C1671900A7F777 /* CollitionMask.swift */,
 			);
 			path = "AR-Build-Your-Game";
 			sourceTree = "<group>";
@@ -192,6 +201,7 @@
 			files = (
 				D4454F9D22C038A8002DADBE /* LaunchScreen.storyboard in Resources */,
 				6910D0AB22C1509E00E544E6 /* art.scnassets in Resources */,
+				2180DCFF22C17C8400F9FA07 /* audio in Resources */,
 				D4454F9A22C038A8002DADBE /* Assets.xcassets in Resources */,
 				D4454F9822C038A7002DADBE /* Main.storyboard in Resources */,
 			);
@@ -215,8 +225,10 @@
 				691246E022C2913F0048BFD7 /* ARSceneViewController+Scene.swift in Sources */,
 				D4454FB322C162BB002DADBE /* MaterialPickerViewController.swift in Sources */,
 				691246E222C2A8120048BFD7 /* BoundingFunction.swift in Sources */,
+				21075B9022C14FC100E5E701 /* Character.swift in Sources */,
 				D4454F9322C038A7002DADBE /* AppDelegate.swift in Sources */,
 				D4454FAD22C13FD4002DADBE /* Enumerators.swift in Sources */,
+				2131CB7322C1671900A7F777 /* CollitionMask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
