@@ -21,5 +21,6 @@ let water = Material(name: "Agua", image: UIImage(named: "water")!, floor: .wate
 let fire = Material(name: "Lava", image: UIImage(named: "fire")!, floor: .fire)
 let ice = Material(name: "Hielo", image: UIImage(named: "ice")!, floor: .ice)
 let none = Material(name: "Nada", image: UIImage(named: "none")!, floor: .none)
+let enemy = Material(name: "Enemigo", image: UIImage(named: "enemy")!, floor: .enemy)
 
-let materials = [grass, water, fire, ice, none]
+let materials = [grass, water, fire, ice, enemy, none]
