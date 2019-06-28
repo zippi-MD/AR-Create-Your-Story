@@ -14,18 +14,20 @@ func addBlock(scene: SCNScene, node: SCNNode, type : FloorType  ) -> SCNNode{
         assert(true, "Can't find blockMap")
         return SCNNode()
     }
-    var tempBlock = block.clone()
+    let tempBlock = block.clone()
     
     let material = SCNMaterial()
-    material.diffuse.contents = UIImage.init(named: "\(type.rawValue)-1")
+    material.diffuse.contents = UIImage.init(named: "\(type)-1")
     
-    tempBlock.geometry?.materials = [material]
+   
     tempBlock.position = node.worldPosition
     let plane = scene.rootNode.childNode(withName: "plane", recursively: true)!
-    let divisor = Float(20)
-    tempBlock.scale = SCNVector3(plane.scale.x/divisor, plane.scale.y/divisor, plane.scale.z/divisor)
+  
+    tempBlock.scale = SCNVector3(plane.scale.x, plane.scale.y, plane.scale.z)
     tempBlock.orientation = plane.orientation
     
+
+    tempBlock.childNodes[0].geometry?.materials = [material]
 
     return tempBlock
     
