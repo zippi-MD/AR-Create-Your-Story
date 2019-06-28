@@ -45,6 +45,21 @@ class ARSceneViewController: UIViewController {
     
     var selectedPlane: SCNNode?
     
+    var materialPicker: MaterialPickerViewController!
+    
+    var blocksOnScene = [String : (SCNNode, FloorType)]()
+    var typeOfFloorSelected: FloorType?
+    
+    var playerLocation: (String, SCNNode)? {
+        willSet {
+            if let _ = newValue{
+                actionButton.view.isHidden = false
+            }
+            else {
+                actionButton.view.isHidden = true
+            }
+        }
+    }
     //MARK: Action Buttons
     let actionButton: ActionButtonViewController = {
         let button = ActionButtonViewController(text: "Seleccionar Plano")
@@ -106,11 +121,17 @@ class ARSceneViewController: UIViewController {
     }
     
     func setupBuildingMapUI(){
+        materialPicker = MaterialPickerViewController(values: materials)
+        materialPicker.delegate = self
+        view.addSubview(materialPicker.view)
+        materialPicker.didMove(toParent: self)
         
+        actionButton.view.isHidden = true
     }
     
     func setupPlacingGamePlaneUI(){
         actionButton.view.isHidden = true
+        actionButton.buttonText = "Jugar"
         crosshair.isHidden = true
         
     }
@@ -137,6 +158,13 @@ class ARSceneViewController: UIViewController {
         case .placingGamePlane:
             return
         case .buildingMap:
+            //animation to start game
+            
+           desplacePlane()
+            
+            
+            
+            
             return
         }
     }
