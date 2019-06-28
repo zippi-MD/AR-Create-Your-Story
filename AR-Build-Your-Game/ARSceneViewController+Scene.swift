@@ -33,4 +33,24 @@ extension ARSceneViewController {
   
     }
     
+    func desplacePlane(){
+        
+        for childNode in (sceneView.scene.rootNode.childNodes){
+            
+            if(childNode.name == "plane"){
+                
+                for child in childNode.childNodes {
+                    SCNTransaction.animationDuration = 2
+                    child.position.z = -0.1
+                    child.opacity = 0
+                    SCNTransaction.commit()
+                    
+                }
+                
+               
+            }
+    
+    }
+    }
+    
 }

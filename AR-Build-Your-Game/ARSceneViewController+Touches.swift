@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SceneKit
 
 extension ARSceneViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
@@ -71,7 +72,28 @@ extension ARSceneViewController {
                 
                 let newBlock = addBlock(scene: sceneView.scene, node: selectedNode, type: floor)
                 newBlock.childNodes[0].name = name
+                
+                
                 sceneView.scene.rootNode.addChildNode(newBlock)
+                
+                SCNTransaction.animationDuration = 0.25
+                
+                let tempScale = newBlock.scale
+                
+                newBlock.scale = SCNVector3(x: 0.25, y: 0.25, z: 0.25)
+                //newBlock.scale = tempScale
+                SCNTransaction.commit()
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+               
+                SCNTransaction.animationDuration = 0.25
+                
+                
+                newBlock.scale = tempScale
+                SCNTransaction.commit()
+                }
+                
+                
                 blocksOnScene[name] = (newBlock,floor)
                 
                 if floor == .player {

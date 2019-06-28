@@ -159,6 +159,12 @@ class ARSceneViewController: UIViewController {
             return
         case .buildingMap:
             //animation to start game
+            
+           desplacePlane()
+            
+            
+            
+            
             return
         }
     }
